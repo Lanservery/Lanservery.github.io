@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://Lanservery.github.io">
-  <title>堕落了？对生活失去兴趣？ | zhanhua的博客</title>
+  <title>Java 知识点（二） | zhanhua的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;好久没有写博客了，要问什么原因，那就是懒！每天刷视频，看番剧，吃饭，睡觉，就这几样东西，每天晚上几乎两点左右才睡，已经养成习惯了，想早睡是不可能的啦，睡不着，看手机到困时才会睡觉，第二天十一点左右起床，之后刷牙洗脸做饭。感觉在家呆得越久就越烦操，做本来自己喜欢的事情没有了兴趣，在学校没有这种感觉，我现在学点Pr剪辑，已经学了一大半，不过学不下去了，想">
+  <meta name="description" content="1、内部类 基础   （1）在类 Outer 的内部再定义一个类 Inner，此时类 Inner 就称为内部类（或称为嵌套类），而类 Outer 则称为外部类（或称为宿主类）。 （2）内部类拥有外部类的所有元素的访问权限。 （3）内部类不能用普通的方式访问。内部类是外部类的一个成员。 （4）内部类声明成静态的，只能访问外部类的静态成员变量。 （5）在外部类中可以直接通过内部类的类名访问内部类。 1">
 <meta property="og:type" content="article">
-<meta property="og:title" content="堕落了？对生活失去兴趣？">
-<meta property="og:url" content="https://lanservery.github.io/2021/01/30/2021-1-30/index.html">
+<meta property="og:title" content="Java 知识点（二）">
+<meta property="og:url" content="https://lanservery.github.io/2021/07/05/Java-2/index.html">
 <meta property="og:site_name" content="zhanhua的博客">
-<meta property="og:description" content="&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;好久没有写博客了，要问什么原因，那就是懒！每天刷视频，看番剧，吃饭，睡觉，就这几样东西，每天晚上几乎两点左右才睡，已经养成习惯了，想早睡是不可能的啦，睡不着，看手机到困时才会睡觉，第二天十一点左右起床，之后刷牙洗脸做饭。感觉在家呆得越久就越烦操，做本来自己喜欢的事情没有了兴趣，在学校没有这种感觉，我现在学点Pr剪辑，已经学了一大半，不过学不下去了，想">
+<meta property="og:description" content="1、内部类 基础   （1）在类 Outer 的内部再定义一个类 Inner，此时类 Inner 就称为内部类（或称为嵌套类），而类 Outer 则称为外部类（或称为宿主类）。 （2）内部类拥有外部类的所有元素的访问权限。 （3）内部类不能用普通的方式访问。内部类是外部类的一个成员。 （4）内部类声明成静态的，只能访问外部类的静态成员变量。 （5）在外部类中可以直接通过内部类的类名访问内部类。 1">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-01-29T16:43:29.000Z">
-<meta property="article:modified_time" content="2021-06-11T16:43:09.749Z">
+<meta property="article:published_time" content="2021-07-05T09:09:56.000Z">
+<meta property="article:modified_time" content="2021-07-05T09:26:31.711Z">
 <meta property="article:author" content="Zhanhua">
-<meta property="article:tag" content="日记">
+<meta property="article:tag" content="笔记">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="zhanhua的博客" type="application/atom+xml">
@@ -147,30 +147,121 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-2021-1-30" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Java-2" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      堕落了？对生活失去兴趣？
+      Java 知识点（二）
     </h1>
   
 
         
-        <a href="/2021/01/30/2021-1-30/" class="archive-article-date">
-  	<time datetime="2021-01-29T16:43:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-30</time>
+        <a href="/2021/07/05/Java-2/" class="archive-article-date">
+  	<time datetime="2021-07-05T09:09:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-07-05</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>&ensp;&ensp;&ensp;&ensp;<strong>好久</strong>没有写博客了，要问什么原因，那就是懒！每天刷视频，看番剧，吃饭，睡觉，就这几样东西，每天晚上几乎两点左右才睡，已经养成习惯了，想早睡是不可能的啦，睡不着，看手机到困时才会睡觉，第二天十一点左右起床，之后刷牙洗脸做饭。感觉在家呆得越久就越烦操，做本来自己喜欢的事情没有了兴趣，在学校没有这种感觉，我现在学点Pr剪辑，已经学了一大半，不过学不下去了，想要放弃，是不是孤独的人会有这种感觉？<br/></p>
-<span id="more"></span>
-<p>&ensp;&ensp;&ensp;&ensp;距离开学还有大约一个月的时间，日子还很长，每天日复一日，不断重复地生活，这样会变得越来越无聊吧。感觉今年疫情还不能很快恢复，又不能去亲戚家，只能呆在家里了，不过只要有好吃的就不会那么无聊，过年吗，家里总会买好多好吃的东西。还是小时候过年好，可以自己买烟花，买爆竹来玩，现在长大了，不能做这些幼稚的事了，最最不好的还是身边没有伙伴一起玩，如果老家有网络的话，今年三十晚上应该玩电脑。<br/><br>&ensp;&ensp;&ensp;&ensp;不想回学校，又不想呆在家，我应该去哪里好呢？哪里是我的归宿？这个问题现在暂时不能马上解决，交给时间吧，让它来解决，时间能解决一切问题。现在晚上凌晨一点半了，感觉有点困，想睡觉，就这样了，晚安！<br/></p>
+        <h4 id="1、内部类"><a href="#1、内部类" class="headerlink" title="1、内部类"></a>1、内部类</h4><ul>
+<li>基础</li>
+</ul>
+<blockquote>
+<p>（1）在类 Outer 的内部再定义一个类 Inner，此时类 Inner 就称为内部类（或称为嵌套类），而类 Outer 则称为外部类（或称为宿主类）。</p>
+<p>（2）内部类拥有外部类的<strong>所有元素的访问权限。</strong></p>
+<p>（3）内部类不能用普通的方式访问。内部类是外部类的一个成员。</p>
+<p>（4）内部类声明成静态的，只能访问外部类的静态成员变量。</p>
+<p>（5）在外部类中可以直接通过内部类的类名访问内部类。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">InnerClass ic = <span class="keyword">new</span> InnerClass();    <span class="comment">// InnerClass为内部类的类名</span></span><br></pre></td></tr></table></figure>
 
+<p>（6）在外部类以外的其他类中则需要通过内部类的完整类名访问内部类。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Test.InnerClass ti = <span class="keyword">new</span> Test().<span class="function">new <span class="title">InnerClass</span><span class="params">()</span></span>; <span class="comment">//Test.innerClass是内部类的完整类名</span></span><br></pre></td></tr></table></figure>
+<p>(7)内部类仍然是一个独立的类，在编译之后内部类会被编译成独立的.class文件，但是前面冠以外部类的类名<strong>和</strong>$符号。</p>
+</blockquote>
+<span id="more"></span>
+
+<ul>
+<li>实例内部类</li>
+</ul>
+<blockquote>
+<p>（1）实例内部类是指没有用 static 修饰的内部类。</p>
+<p>（2）在实例内部类中不能定义 static 成员，除非同时使用 final 和 static 修饰。</p>
+<p>（3）在外部类的静态方法和外部类以外的其他类中，必须通过外部类的实例创建内部类的实例。如</p>
+<p><code>Outer.Inner i = new Outer().new Inner(); // 需要创建外部类实例</code></p>
+</blockquote>
+<ul>
+<li>静态内部类（static 修饰的内部类）</li>
+</ul>
+<blockquote>
+<p>（1）在创建静态内部类的实例时，不需要创建外部类的实例。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Outer.Inner oi = <span class="keyword">new</span> Outer.Inner(); <span class="comment">//创建的oi是Inner类的对象</span></span><br></pre></td></tr></table></figure>
+
+<p>（2）静态内部类可以直接访问外部类的静态成员，如果要访问外部类的实例成员，则需要通过外部类的实例去访问。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Outer</span> </span>&#123;</span><br><span class="line"><span class="keyword">int</span> a = <span class="number">0</span>;    <span class="comment">// 实例变量</span></span><br><span class="line"><span class="keyword">static</span> <span class="keyword">int</span> b = <span class="number">0</span>;    <span class="comment">// 静态变量</span></span><br><span class="line"><span class="keyword">static</span> <span class="class"><span class="keyword">class</span>  <span class="title">Inner</span> </span>&#123;</span><br><span class="line"> Outer o = <span class="keyword">new</span> Outer;</span><br><span class="line"> <span class="keyword">int</span> a2 = o.a;    <span class="comment">// 访问实例变量</span></span><br><span class="line"> <span class="keyword">int</span> b2 = b;    <span class="comment">// 访问静态变量</span></span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>（3）外部类<strong>以外的其他类</strong>需要通过完整的类名访问静态内部类中的静态成员，如果要访问静态内部类中的实例成员，则需要通过静态内部类的实例。</p>
+</blockquote>
+<ul>
+<li><p>局部内部类（在方法中定义的内部类）</p>
+<blockquote>
+<p>(1)语法格式：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">method</span><span class="params">()</span> </span>&#123;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Inner</span> </span>&#123;</span><br><span class="line"> <span class="comment">// 局部内部类</span></span><br><span class="line"> 		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>(2)在局部内部类中可以访问外部类的所有成员。</p>
+<p>(3)局部内部类只在当前方法中有效。</p>
+<p>(4)在局部内部类中只可以访问当前方法中 <strong>final 类型</strong>的参数与变量。</p>
+<p>(5)如果方法中的成员与外部类中的<strong>成员同名</strong>，则可以使用 <code>OuterClassNam.this.MemberName</code> 的形式访问外部类中的成员。</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="2、匿名类-指没有类名的内部类-大多定义于方法内部"><a href="#2、匿名类-指没有类名的内部类-大多定义于方法内部" class="headerlink" title="2、匿名类(指没有类名的内部类,大多定义于方法内部)"></a>2、匿名类(指没有类名的内部类,大多定义于方法内部)</h4><ul>
+<li><p>语法形式如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> 类或接口() &#123;</span><br><span class="line">   <span class="comment">// 类的主体</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>两种实现方式：</p>
+<blockquote>
+<p>继承一个类，重写其方法。<br>实现一个接口（可以是多个），实现其方法。</p>
+</blockquote>
+</li>
+<li><p>可以访问外部类的所有成员。<strong>如果匿名类位于一个方法中</strong>，则匿名类只能访问方法中 final 类型的局部变量和参数。</p>
+</li>
+<li><p>例子</p>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestAnonymousInterClass</span> </span>&#123;</span><br><span class="line">	<span class="comment">// 在这个方法中构造一个匿名内部类</span></span><br><span class="line">	<span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">show</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	 Out anonyInter = <span class="keyword">new</span> Out() &#123;</span><br><span class="line">       <span class="comment">// 获取匿名内部类的实例</span></span><br><span class="line">       <span class="function"><span class="keyword">void</span> <span class="title">show</span><span class="params">()</span> </span>&#123;</span><br><span class="line">          System.out.println(<span class="string">&quot;调用匿名类中的 show() 方法&quot;</span>);</span><br><span class="line">          &#125;</span><br><span class="line">         &#125;;</span><br><span class="line">  anonyInter.show();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>匿名类和局部内部类一样，可以访问外部类的所有成员。如果匿名类位于一个方法中，则匿名类只能访问方法中 final 类型的局部变量和参数。</li>
+<li>匿名类中允许使用非静态代码块进行成员初始化操作。</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Out anonyInter = <span class="keyword">new</span> Out() &#123;</span><br><span class="line">    <span class="keyword">int</span> i; &#123;    <span class="comment">// 非静态代码块</span></span><br><span class="line">        i = <span class="number">10</span>;    <span class="comment">//成员初始化</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">show</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;调用了匿名类的 show() 方法&quot;</span>+i);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h4 id="3、实现就是拿去使用。"><a href="#3、实现就是拿去使用。" class="headerlink" title="3、实现就是拿去使用。"></a>3、实现就是拿去使用。</h4><h4 id="4、Java-中常见的输出函数："><a href="#4、Java-中常见的输出函数：" class="headerlink" title="4、Java 中常见的输出函数："></a>4、Java 中常见的输出函数：</h4><ul>
+<li><p><code>printf</code> 主要继承了C语言中 <code>printf</code> 的一些特性，可以进行格式化输出,例如。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">System.out.printf(<span class="string">&quot;%d - %d = %d \n&quot;</span>, n1, n2, f2.calculateInt(n1, n2));</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>print</code> 就是一般的标准输出，但是不换行。</p>
+</li>
+<li><p><code>println</code> 就是最后会换行。</p>
+</li>
+</ul>
+<h4 id="5、Lambda表达式"><a href="#5、Lambda表达式" class="headerlink" title="5、Lambda表达式"></a>5、Lambda表达式</h4><ul>
+<li><p>标准语法形式如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(参数列表) -&gt; &#123;</span><br><span class="line">  <span class="comment">// Lambda表达式体</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>例如:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Lambda表达式实现Calculable接口</span></span><br><span class="line">result = (<span class="keyword">int</span> a, <span class="keyword">int</span> b) -&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> a + b;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p>原型:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 匿名内部类实现Calculable接口</span></span><br><span class="line">result=<span class="keyword">new</span> Calculable() &#123;</span><br><span class="line">	<span class="comment">// 实现加法运算</span></span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">calculatelnt</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> a+b;</span><br><span class="line">      &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h4 id="6、代码格式化：右键-gt-Source-gt-Format"><a href="#6、代码格式化：右键-gt-Source-gt-Format" class="headerlink" title="6、代码格式化：右键-&gt;Source-&gt;Format."></a>6、代码格式化：右键-&gt;Source-&gt;Format.</h4>
       
 
       
@@ -183,7 +274,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">日记</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
         		</li>
       		
 		</ul>
@@ -202,18 +293,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2021/06/11/2021-6-11/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2021/07/05/Java-1/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          科目三又挂了！
+          Java 知识点（一）
         
       </div>
     </a>
   
   
-    <a href="/2021/01/15/2021-1-15/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">说说期末这段时间的事</div>
+    <a href="/2021/06/11/2021-6-11/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">科目三又挂了！</div>
       <i class="icon-circle-right"></i>
     </a>
   

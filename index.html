@@ -82,12 +82,6 @@
 					<a class="twitter" target="_blank" href="https://twitter.com/Tomiha8" title="twitter"><i class="icon-twitter"></i></a>
 		        
 			</div>
-			<!-- 网易云音乐插件 -->
-			
-				<div style="position:absolute; bottom:120px left:auto; width:85">
-					<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=240 height=52 src="//music.163.com/outchain/player?type=0&id=6830472486&auto=0&height=32"></iframe>
-				</div>
-			
 		</nav>
 	</header>		
 </div>
@@ -149,6 +143,175 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-Java-1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/07/05/Java-1/">Java 知识点（一）</a>
+    </h1>
+  
+
+        
+        <a href="/2021/07/05/Java-1/" class="archive-article-date">
+  	<time datetime="2021-07-05T09:20:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-07-05</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>1、</strong>类命名首字母必须<strong>大写</strong>。java区分大小写，<code>a != A</code>。<strong>函数里面不要再定义函数。</strong></p>
+<p><strong>2、</strong>一个文件中<strong>只能有一个<code>public</code>类。内部类除外,可以加public.</strong></p>
+<p><strong>3、</strong>类的访问控制符只能是空或者 public，方法和属性的访问控制符有 4 个，分别是 public、 private、protected 和 friendly，其中 friendly 是一种没有定义专门的访问控制符的默认情况。</p>
+<p><strong>4、</strong>a+=3等价于a=a+3。</p>
+        
+          <a class="article-more-a" href="/2021/07/05/Java-1/#more">查看更多 >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/07/05/Java-1/">全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Java-2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/07/05/Java-2/">Java 知识点（二）</a>
+    </h1>
+  
+
+        
+        <a href="/2021/07/05/Java-2/" class="archive-article-date">
+  	<time datetime="2021-07-05T09:09:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-07-05</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="1、内部类"><a href="#1、内部类" class="headerlink" title="1、内部类"></a>1、内部类</h4><ul>
+<li>基础</li>
+</ul>
+<blockquote>
+<p>（1）在类 Outer 的内部再定义一个类 Inner，此时类 Inner 就称为内部类（或称为嵌套类），而类 Outer 则称为外部类（或称为宿主类）。</p>
+<p>（2）内部类拥有外部类的<strong>所有元素的访问权限。</strong></p>
+<p>（3）内部类不能用普通的方式访问。内部类是外部类的一个成员。</p>
+<p>（4）内部类声明成静态的，只能访问外部类的静态成员变量。</p>
+<p>（5）在外部类中可以直接通过内部类的类名访问内部类。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">InnerClass ic = <span class="keyword">new</span> InnerClass();    <span class="comment">// InnerClass为内部类的类名</span></span><br></pre></td></tr></table></figure>
+
+<p>（6）在外部类以外的其他类中则需要通过内部类的完整类名访问内部类。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Test.InnerClass ti = <span class="keyword">new</span> Test().<span class="function">new <span class="title">InnerClass</span><span class="params">()</span></span>; <span class="comment">//Test.innerClass是内部类的完整类名</span></span><br></pre></td></tr></table></figure>
+<p>(7)内部类仍然是一个独立的类，在编译之后内部类会被编译成独立的.class文件，但是前面冠以外部类的类名<strong>和</strong>$符号。</p>
+</blockquote>
+        
+          <a class="article-more-a" href="/2021/07/05/Java-2/#more">查看更多 >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/07/05/Java-2/">全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="post-2021-6-11" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -399,6 +562,11 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>&ensp;&ensp;&ensp;&ensp;<strong>本人</strong>菜鸟一个，请多关照！这个博客使用 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> 创建，使用 <a target="_blank" rel="noopener" href="https://github.com/litten/hexo-theme-yilia">Yilla</a> 主题，感谢作者提供代码。这个博客主要记录我的日常琐事以及学习笔记，如果有任何问题和想法，可以在博客找到联系方式与我交流，我会积极回复，感谢你观看我的博客。</p>
+<p><strong>既然来了，就请听个音乐吧！！！</strong></p>
+<div align="center">
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=672188&auto=0&height=66"></iframe>
+</div>
+
 
       
 
@@ -542,6 +710,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">日记</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">笔记</a>
               </li>
              
               <li class="article-tag-list-item">
